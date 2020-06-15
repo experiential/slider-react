@@ -8,7 +8,7 @@ import Tile from './Tile';
 
 
 const padding = 10;
-const board_style_init = { border: "10px solid gray",
+const boardStyleInit = { border: "10px solid gray",
                     width: 0, 
                     height: 0, 
                     position: "relative",
@@ -27,12 +27,12 @@ class Board extends React.Component {
 		const { grid, tileWidth, tileHeight } = this.props.board;
 		let gridSize = Spatial.getGridSize(grid);
 
-		let board_style = Object.assign({}, board_style_init);
-		board_style.width = tileWidth * gridSize[0] + padding * 2;
-		board_style.height = tileHeight * gridSize[1] + padding * 2;
+		let boardStyle = Object.assign({}, boardStyleInit);
+		boardStyle.width = tileWidth * gridSize[0] + padding * 2;
+		boardStyle.height = tileHeight * gridSize[1] + padding * 2;
 
 		return (
-			<div style={ board_style }>
+			<div style={ boardStyle }>
 			{
 				grid.map( (row, rowIndex) =>
 				{
