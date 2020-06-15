@@ -7,7 +7,7 @@ import { Spatial } from '../spatial_functions.js';
 
 
 const padding = 0;
-const tile_style = {
+const tileStyle = {
 	border: "0px solid gray", 
 	padding: 0, 
 	margin: 0,
@@ -26,8 +26,9 @@ class Tile extends React.Component {
 	}
 
 	render() {
+
 		let { x, y, tile, board } = this.props;
-		let thisTileStyle = Object.assign({}, tile_style);
+		let thisTileStyle = Object.assign({}, tileStyle);
 		let { tileHeight, tileWidth } = board;
 		let gridSize = Spatial.getGridSize(board.grid);
 		thisTileStyle.width = tileWidth;
