@@ -1,3 +1,9 @@
+# Slider (React/Redux version)
+
+This is a very simple version of the 'sliding tile' puzzle. I built this simply to test out React and Redux, and hope to add more features sometime soon!
+
+There is a [working version available here](http://www.jamesthaimassage.co.uk/slider/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
